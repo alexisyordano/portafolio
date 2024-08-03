@@ -1,0 +1,359 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#header {
+  width: 100%;
+  overflow: hidden;
+  background: #252932;
+  margin-bottom: 2px;
+}
+
+.starsection,
+.endsection {
+  width: 100%;
+  height: 45vh; /* Ajustar según necesidad */
+  position: relative;
+  overflow: hidden;
+  background-color: #252932;
+}
+
+.endsection {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: rgb(255, 255, 255);"></path></svg>');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+
+.button-yellow {
+  min-width: 130px;
+  height: auto;
+  padding: 5px 50px;
+  font-weight: 700;
+  font-size: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  z-index: 0;
+  background: #fff;
+  overflow: hidden;
+  border: 2px solid #ffd819;
+  color: #fff;
+  background: #252932;
+}
+.button-yellow:hover {
+  color: #252932;
+}
+
+.button-yellow:hover:after {
+  width: 100%;
+}
+
+.button-yellow:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transition: all 0.3s ease;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: #ffd819;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #2c3e50 #ffd819;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #2c3e50;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #2c3e50;
+  border-radius: 20px;
+  border: 3px solid #ffd819;
+}
+
+/* Navigation Menu */
+
+/* Hamburger Menu Styles */
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 25px;
+  height: 18px;
+  cursor: pointer;
+  z-index: 20; /* Ensure it's above the menu */
+}
+
+.hamburger .bar {
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger.active {
+  position: relative;
+  margin-top: -180px;
+  left: -130px;
+}
+
+/* Animation for the menu icon when active */
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(6px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-6px) rotate(-45deg);
+}
+
+.animations {
+  position: relative;
+  -webkit-animation: moveRight 1s ease-in;
+  animation: moveRight 1s ease-in;
+}
+
+.animations-two {
+  position: relative;
+  -webkit-animation: moveRight 1s ease-in;
+  animation: moveLeft 1s ease-in;
+}
+
+.imgpage {
+  -webkit-animation: above 1s ease-in;
+  animation: above 1s ease-in;
+}
+
+@-webkit-keyframes moveRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@-webkit-keyframes above {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@-webkit-keyframes moveLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes above {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+.animate-text {
+  opacity: 1;
+  transform: translateY(0);
+  animation: above 1s ease-in;
+}
+
+.before-animation {
+  transform: translateY(10px);
+  transition: all 2s ease-out;
+}
+
+.btn-close {
+  padding: 10px;
+  border: none;
+  background-color: #ffd819;
+  border-radius: 50%;
+  height: 48px;
+  width: 48px;
+  font-size: 20px;
+  color: #2c3e50;
+  cursor: pointer;
+  position: relative;
+  top: -50px;
+  left: 230px;
+}
+
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #fff;
+}
+
+.php {
+  width: 70%;
+  background-color: #170cb1;
+}
+
+.html {
+  width: 90%;
+  background-color: #f87d18;
+}
+
+.css {
+  width: 80%;
+  background-color: #2196f3;
+}
+
+.c {
+  width: 60%;
+  background-color: #96069b;
+}
+
+.js {
+  width: 40%;
+  background-color: #e7f70c;
+}
+
+.python {
+  width: 40%;
+  background-color: #d1ce2b;
+}
+
+.angular {
+  width: 40%;
+  background-color: red;
+}
+
+.react {
+  width: 40%;
+  background-color: rgb(88 196 220);
+}
+
+.tailwind {
+  width: 40%;
+  background-color: rgb(14 165 233);
+}
+
+.net {
+  width: 40%;
+  background-color: #9780e5;
+}
+
+.code {
+  width: 40%;
+  background-color: #dd4814;
+}
+
+.laravel {
+  width: 40%;
+  background-color: rgb(249 50 44);
+}
+
+.ionic {
+  width: 40%;
+  background-color: #176bff;
+}
+
+.bostrap {
+  width: 40%;
+  background-color: #7952b3;
+}
+
+#item-1 {
+  scroll-behavior: smooth;
+}
+#item-2 {
+  scroll-behavior: smooth;
+}
+#item-3 {
+  scroll-behavior: smooth;
+}
+#item-4 {
+  scroll-behavior: smooth;
+}
+
+.up {
+  display: none;
+  padding: 12px;
+  bottom: 50px;
+  box-sizing: inherit;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #ffd819;
+  border-radius: 50%;
+  height: 48px;
+  width: 48px;
+  margin-bottom: -10px;
+  font-size: 20px;
+  color: #2c3e50;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 2px;
+}
+
+.arrow {
+  width: 3vmin;
+  height: 3vmin;
+  box-sizing: border-box;
+  position: absolute;
+  left: 28%;
+  top: 15%;
+}
