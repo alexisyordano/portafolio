@@ -43,9 +43,7 @@ function Technologies() {
           }
         });
 
-        setTimeout(() => {
-          setData(technologiesList);
-        }, 1000);
+        setData(technologiesList);
 
         console.log("technologies", technologiesList);
       } catch (error) {
