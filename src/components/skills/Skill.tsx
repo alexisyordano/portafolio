@@ -78,7 +78,7 @@ function Skill() {
             </div>
           ))}
         </div>
-        <div className="m-4 max-sm:w-full">
+        <div className="m-4 max-sm:w-44">
           {framework.map((item) => (
             <div
               key={item.id}

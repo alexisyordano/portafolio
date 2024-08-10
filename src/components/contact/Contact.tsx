@@ -34,7 +34,7 @@ function Contact() {
         <div>
           <div className="flex justify-start max-sm:justify-center md:justify-center">
             <img
-              className="w-80 h-20 ml-12 cursor-pointer max-sm:ml-5 max-sm:mt-4 max-sm:w-40 max-sm:h-10"
+              className="w-80 h-20 ml-12 cursor-pointer max-sm:ml-0 max-sm:mt-4 max-sm:w-40 max-sm:h-10"
               src={linkedin}
               alt="linkedin"
             />
