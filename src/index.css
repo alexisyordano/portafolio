@@ -25,6 +25,10 @@
   background-position: bottom center;
 }
 
+.button-yellow-responsive {
+  display: none;
+}
+
 .button-yellow {
   min-width: 130px;
   height: auto;

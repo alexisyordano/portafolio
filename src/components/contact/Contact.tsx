@@ -11,46 +11,56 @@ function Contact() {
         <div className="h-2 w-52  border-t-4 border-[#ffd819]"></div>
       </div>
 
-      <div className="grid grid-cols-3 min-md:flex flex-col lg:grid-cols-3 gap-4 mt-8">
-        <div className="flex justify-start max-md:justify-center">
-          <img
-            className="w-80 cursor-pointer max-sm:w-30 max-sm:h-16"
-            src={github}
-            alt="github"
-          />
+      <div className="lg:grid grid-cols-3 max-sm:flex max-sm:flex-col md:flex md:flex-col gap-4 mt-8">
+        <div>
+          <div className="flex justify-start max-sm:justify-center md:justify-center">
+            <img
+              className="w-80 cursor-pointer  max-sm:w-40"
+              src={github}
+              alt="github"
+            />
+          </div>
+          <div className="flex lg:justify-start ml-9 max-sm:flex justify-center">
+            <a href="https://github.com/alexisyordano" target="_blank">
+              <button className="button-yellow  max-sm:text-lg">
+                Ver mi perfil
+              </button>
+            </a>
+          </div>
         </div>
 
-        <div className="flex justify-center  min-md:justify-center">
-          <img
-            className="w-80 h-20 ml-12 cursor-pointer max-sm:ml-5 max-sm:w-30 max-sm:h-10"
-            src={linkedin}
-            alt="linkedin"
-          />
+        <div>
+          <div className="flex justify-center  min-md:justify-center">
+            <img
+              className="w-80 h-20 ml-12 cursor-pointer max-sm:ml-5 max-sm:mt-4 max-sm:w-40 max-sm:h-10"
+              src={linkedin}
+              alt="linkedin"
+            />
+          </div>
+          <div className="flex justify-center mt-4 ml-12 max-sm:w-80">
+            <a href="https://www.linkedin.com/in/alexis-lozada" target="_blank">
+              <button className="button-yellow max-sm:text-lg">
+                Ver mi perfil
+              </button>
+            </a>
+          </div>
         </div>
-        <div className="flex justify-center min-md:justify-center">
-          <img
-            className="lg:w-28 lg:h-28 lg:ml-48 md:ml-20 md:mt-7 md:w-20 md:h-20 max-sm:w-10 max-sm:h-10 max-sm:mt-3 max-sm:ml-10 mt-6 cursor-pointer"
-            src={telegram}
-            alt="telegram"
-          />
-        </div>
-      </div>
 
-      <div className="grid grid-cols-3">
-        <div className="flex justify-start ml-9">
-          <a href="https://github.com/alexisyordano" target="_blank">
-            <button className="button-yellow">Ver mi perfil</button>
-          </a>
-        </div>
-        <div className="flex justify-center ml-12">
-          <a href="https://www.linkedin.com/in/alexis-lozada" target="_blank">
-            <button className="button-yellow">Ver mi perfil</button>
-          </a>
-        </div>
-        <div className="flex justify-end">
-          <a href="https://t.me/alozada" target="_blank">
-            <button className="button-yellow">!Hablemos!</button>
-          </a>
+        <div>
+          <div className="flex justify-center min-md:justify-center">
+            <img
+              className="lg:w-28 lg:h-28 lg:ml-48 md:ml-20 md:mt-7 md:w-20 md:h-20 max-sm:w-10 max-sm:h-10 max-sm:mt-3 max-sm:ml-10 mt-6 cursor-pointer"
+              src={telegram}
+              alt="telegram"
+            />
+          </div>
+          <div className="flex lg:justify-end ml-12 max-sm:w-80 max-sm:mt-2 mt-10 max-sm:flex justify-center">
+            <a href="https://t.me/alozada" target="_blank">
+              <button className="button-yellow max-sm:text-lg">
+                !Hablemos!
+              </button>
+            </a>
+          </div>
         </div>
       </div>
     </div>
