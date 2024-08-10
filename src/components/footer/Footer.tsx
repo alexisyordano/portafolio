@@ -4,13 +4,14 @@ function Footer() {
     <div className="position relative bg-[#252932] w-full h-52">
       <div className="flex justify-center">
         <label className="text-white font-bold text-md mt-20">
-          Alexis Lozada Desarrollador web Full Stack
+          Hecho con ♥ por Alexis Lozada
         </label>
         <br></br>
       </div>
       <div className="flex justify-center">
         <label className="text-white font-bold text-md mt-2">
-          @{currentYear}
+          {"</>"}
+          {currentYear}
         </label>
       </div>
     </div>

@@ -24,7 +24,7 @@ function Section() {
         </div>
       </div>
       <div className="endsection">
-        <div className="flex justify-center">
+        <div className="max-sm:flex justify-center">
           <div className="max-sm:mt-2 md:ml-32 lg:ml-64">
             <a href="mailto:alexvivex69@gmail.com">
               <button className="button-yellow">Contacto</button>

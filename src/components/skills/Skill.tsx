@@ -52,9 +52,11 @@ function Skill() {
   }, []); // Ensure the empty dependency array is present
 
   return (
-    <div className="container mx-auto px-4 mt-12">
+    <div className="container mx-auto px-2 mt-12">
       <div className="flex justify-center mt-4">
-        <h2 className="relative lg:text-3xl md:text-5xl">Skills</h2>
+        <h2 className="relative lg:text-3xl max-sm:text-3xl md:text-5xl">
+          Skills
+        </h2>
       </div>
       <div className="flex justify-center relative top-4">
         <div className="h-2 w-52  border-t-4 border-[#ffd819]"></div>
@@ -76,7 +78,7 @@ function Skill() {
             </div>
           ))}
         </div>
-        <div className="m-4">
+        <div className="m-4 max-sm:w-full">
           {framework.map((item) => (
             <div
               key={item.id}

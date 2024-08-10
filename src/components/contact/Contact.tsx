@@ -5,7 +5,9 @@ function Contact() {
   return (
     <div className="container mx-auto px-4 mt-12">
       <div className="flex justify-center mt-4">
-        <h2 className="relative lg:text-3xl md:text-5xl">Contáctame</h2>
+        <h2 className="relative lg:text-3xl max-sm:text-3xl md:text-5xl">
+          Contáctame
+        </h2>
       </div>
       <div className="flex justify-center relative top-4">
         <div className="h-2 w-52  border-t-4 border-[#ffd819]"></div>
@@ -13,7 +15,7 @@ function Contact() {
 
       <div className="lg:grid grid-cols-3 max-sm:flex max-sm:flex-col md:flex md:flex-col gap-4 mt-8">
         <div>
-          <div className="flex justify-start max-sm:justify-center md:justify-center">
+          <div className="flex lg:justify-start max-sm:justify-center md:justify-center">
             <img
               className="w-80 cursor-pointer  max-sm:w-40"
               src={github}
@@ -49,7 +51,7 @@ function Contact() {
         <div>
           <div className="flex justify-center min-md:justify-center">
             <img
-              className="lg:w-28 lg:h-28 lg:ml-48 md:ml-20 md:mt-7 md:w-20 md:h-20 max-sm:w-10 max-sm:h-10 max-sm:mt-3  mt-6 cursor-pointer"
+              className="lg:w-28 lg:h-28 lg:ml-48  md:mt-7 md:w-20 md:h-20 max-sm:w-10 max-sm:h-10 max-sm:mt-3  mt-6 cursor-pointer"
               src={telegram}
               alt="telegram"
             />
