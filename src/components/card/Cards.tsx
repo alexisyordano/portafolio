@@ -76,13 +76,13 @@ function Technologies() {
     fetchProjects();
   }, []);
   return (
-    <div className="container mx-auto px-2 mt-12">
+    <div className="container mx-auto px-4 mt-12">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {loading
           ? projects.map((project) => (
               <div
                 key={project.id}
-                className="flex cursor-pointer flex-col justify-between max-w-sm rounded w-full h-[450px] overflow-hidden shadow-lg bg-white m-2"
+                className="flex cursor-pointer flex-col justify-between max-w-sm rounded w-90 h-[450px] overflow-hidden shadow-lg bg-white m-2"
               >
                 <div onClick={() => handleOpen(project)}>
                   <img
