@@ -35,7 +35,7 @@ function Contact() {
           />
         </div>
       </div>
-      <div className="grid grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-2">
+      {/* <div className="grid grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-2">
         <div className="flex justify-center max-sm:text-xs">
           <a href="https://github.com/alexisyordano" target="_blank">
             <button className="button-yellow">Ver mi perfil</button>
@@ -51,7 +51,7 @@ function Contact() {
             <button className="button-yellow">!Hablemos!</button>
           </a>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
