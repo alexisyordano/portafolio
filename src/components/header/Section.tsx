@@ -7,10 +7,10 @@ function Section() {
       <div className="starsection">
         <div className="grid grid-flow-col auto-cols-max p-32 justify-start max-sm:flex flex-col">
           <div className="w-full text-center px-4">
-            <h1 className="text-4xl max-sm:text-4xl max-sm:-mt-24 md:text-4xl md:-ml-24 lg:text-7xl lg:ml-5 font-bold text-white animations">
+            <h1 className="text-4xl max-sm:text-4xl max-sm:-left-14 max-sm:w-60 max-sm:-mt-24 md:text-4xl md:-ml-24 lg:text-7xl lg:ml-5 font-bold text-white animations">
               Alexis Lozada
             </h1>
-            <h1 className="text-xl max-sm:text-lg max-sm:mt-6  md:text-3xl md:-ml-24 mt-2 lg:ml-5 font-bold animations-two text-white">
+            <h1 className="text-xl max-sm:text-lg max-sm:mt-6 max-sm:w-60 max-sm:-left-12 md:text-3xl md:-ml-24 mt-2 lg:ml-5 font-bold animations-two text-white">
               Web Developer Full Stack
             </h1>
           </div>
