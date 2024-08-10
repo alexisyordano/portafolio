@@ -61,7 +61,7 @@ function Skill() {
       <div className="flex justify-center relative top-4">
         <div className="h-2 w-52  border-t-4 border-[#ffd819]"></div>
       </div>
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-2 gap-4 max-sm:grid-cols-1">
         <div className="m-4">
           {skills.map((skill) => (
             <div
@@ -78,7 +78,7 @@ function Skill() {
             </div>
           ))}
         </div>
-        <div className="m-4 max-sm:w-44">
+        <div className="m-4">
           {framework.map((item) => (
             <div
               key={item.id}
